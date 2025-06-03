@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI分析傷口恢復狀況</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .floating-menu {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    width: 60px;
+  height: 180px;
+  }
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">AI分析傷口恢復狀況 助患者居家照護</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <span>李雨羲</span>
+      <span>•</span>
+      <span>2023-09-28</span>
+    </div>
+    
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      在新冠疫情爆發所導致的居家隔離之下，人們在就醫上的困難提高，因此醫療體系便開始積極開發遠端醫療的可能性。亞東紀念醫院整型美容外科專任主治醫師張惇皓與元智大學資管系副教授詹前隆帶領的學生團隊，共同合作研發了一款人工智慧輔助遠距傷口照護平台，提供醫療遠端監測，改善居家照護的困境。
+    </p>
+
+    <!-- 內文圖片 -->
+     <figure class="mb-6">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/09/241b101bdf1444ab2ccf6e9aa946ceed-1024x768.jpg" 
+       alt="護理照護現場" 
+       class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    亞東醫院外科醫師張惇皓實際演示平台操作方法，展示如何以照護者指甲作為參照比例尺，拍攝傷處上傳雲端。<br />圖／元智大學提供
+  </figcaption>
+</figure>
+    
+<!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      台灣近年來高齡人口不斷攀升，因行動不便，而錯過黃金治療時機的慢性傷口病患逐年增加。為此，團隊開發的遠端照護平台透過拍攝傷處，讓AI分析復原及惡化的狀況，協助醫生與病患溝通、就診，提升護理療程的效率。團隊學生阮德慶說：「醫生可以透過專屬的病人資料庫，以訊息告知病患是否需要前往醫院回診。」此模式不僅減少了病患外出就診的麻煩，也替醫生省去了繁瑣的前置流程。
+    </p>
+
+    <!-- 第二張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/09/9a8be927900e2cc66102cacde38f746e-1024x759.jpg" alt="系統操作畫面" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    資料庫透過顏色區分患者狀況。紅色告知此病患上傳了新照片或訊息，藍色代表醫生已回覆，而綠色則是已痊癒。<br />圖／阮德慶提供
+  </figcaption>
+</figure>
+    <p class="mb-4 leading-7">
+      「病患在拍照時必須以正面的角度拍攝，並且以照護者的指甲放置在傷口旁作為參考比例尺，系統會參考指甲片大小，自動換算傷口面積。」阮德慶表示，如果使用錢幣等其他參照物作為比例尺，物品表面的細菌可能會感染傷口。而照護者在協助患者處理傷口時，往往會更加注重手部清潔，因此最終才選擇了大小及衛生性最適中的照護者指甲。
+    </p>
+
+ <!-- 第三張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/09/906abb3a873ae3be26eaa74713c8b1b5-1024x706.png" alt="系統操作畫面" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    AI透過分析傷口照片，自動換算惡化及復原部位佔據總面積的百分比，最終產出分析報告提供醫生檢閱。<br />圖／阮德慶提供
+  </figcaption>
+</figure>
+    <p class="mb-4 leading-7">
+     亞東醫院外科醫師張惇皓表示，平台距離正式上線還有很長遠的路要走，「實際運用時需考量更多的資安問題，我們目前還沒有足夠的技術和資源解決。」因此，張惇皓會先以自身的病患開始營運，配合此AI進行診療，減少誤判的可能性。同時，他也考慮嘗試加入語音輸入的功能，讓不擅長打字的高齡人口使用聊天室時更加方便。
+    </p>
+    
+    <p class="mb-4 leading-7">
+    「因為很多慢性傷口的感染是在內部的，在診斷的時候我們都會用鑷子去撥開表皮，深入組織去觀察狀況。」天主教耕莘醫院一般外科暨乳症科主治醫師陳俊煌表示，如果只以AI及醫生遠距判斷的話，很容易因表層痊癒而忽略了內部感染，所以在實際應用上存在限制；另外，因目前聊天室只有文字交流功能，可能會導致病患誤會醫師的指令，所以他希望平台可以再增加視訊、圖片等媒體功能，讓醫生可以搭配示意圖、示範影片指導病患，減少理解錯誤的可能性。
+    </p>
+  </main>
+<div class="floating-menu">
+  <a href="new.html" class="float-btn btn-art">💡</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button></div>
+</body>
+</html>
