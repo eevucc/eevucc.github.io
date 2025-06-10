@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首創以鎂製燃料電池</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+  .floating-menu {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    width: 60px;
+  height: 180px;
+  }
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+<a href="index.html" class="fixed top-4 left-4 z-50 text-3xl font-bold text-blue-600 hover:underline transition">
+  🌠
+</a>
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">首創以鎂製燃料電池　輕巧設計備災更便利</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <a href="index.html" class="text-black-600 hover:underline">李雨羲</a>
+      <span>•</span>
+      <span>2023-11-30</span>
+    </div>
+    
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      當災害發生時，電池經常作為避難設備的能源，然而傳統的緊急發電裝置，大多不利於攜帶與長期用電。因此，來自國立臺灣海洋大學海洋環境資訊系的蕭采宣與輔仁大學財經法律學系的賴廷愷，研發出「微型空氣發電機」，以鎂—空氣燃料電池作為主要發電動力的裝置，不僅體積小且輕便，更結合綠色化學思維使用環境友善的材料。此研發在2023第七屆全國「慈悲科技創新競賽」取得第一名的佳績，同時為儲能備災的應對方式提供新選擇。
+    </p>
+
+    <!-- 內文圖片 -->
+     <figure class="mb-6">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/167ef936a56bfd52bff4194819ef14eb.png" 
+       alt="團隊合照" 
+       class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    團隊研發的「微型空氣發電機」於2023第七屆全國慈悲科技創新競賽中獲得第一名與特別獎的榮耀。 　圖／賴廷愷提供
+  </figcaption>
+</figure>
+    
+<!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      「過去常用的乾電池和充電電池容量有限，汽柴油發電機又非常笨重。」賴廷愷表示，本次研發的鎂—空氣燃料電池重量只有430公克，相較於過去的發電機更便於攜帶。同時，發電機除了本身安裝LED照明，也可藉由連接USB插孔，供電給其他電子產品使用。
+    </p>
+
+      <!-- 第二張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/d369797b71149403421dad7c26cbf4c0.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    目前發電機以個人攜帶為主進行較為簡易的設計，團隊表示未來可透過加裝渦輪、改變電池排列等等方式，提高發電功率。 　圖／賴廷愷提供
+  </figcaption>
+</figure>
+
+    <p class="mb-4 leading-7">
+      使用發電機時只需將鎂金屬顆粒透過上方孔洞投入，並從另一個管道倒入檸檬酸等酸性液體，即可藉由內部的燃料電池發電。電壓大約5伏特、電流1.5安培，適用於大部分的一般電器，並且10公克的鎂金屬便可以持續用電一天。而在材料的保存與補充上，只需將鎂金屬與發電機分開存放即可，無須特殊包裝或容器，更沒有保存期限的限制。此外，若鎂金屬使用完畢，也可以直接於一般材料行購買。
+    </p>
+
+     <p class="mb-4 leading-7">
+      「我們曾試過以鋁作為燃料發電，但它會產生環境難以處理的廢棄物。」蕭采宣表示，在媒材挑選上，他們嘗試結合綠色化學思維，將對環境影響程度納入挑選金屬燃料的考量，所以選擇不會產生毒性的鎂，作為與氧氣作用的電池陽極端。而在打造發電機外殼時，則選用在自然環境中可自行分解的塑膠。
+    </p>
+  
+    <p class="mb-4 leading-7">
+      「設備以鎂與空氣作為燃料，同時也回收兩者反應所產生的氫氣進行發電。」賴廷愷說明，發電機以開放式孔洞讓空氣能夠自然流入，並以能夠吸附氧氣的活性碳多孔結構，在燃料電池中與鎂金屬產生反應。而為了將額外生成的氫氣自然回收，他們在內部裝設氫—空氣燃料電池，不僅可以減少氫氣外洩的可能性，更能藉此產生更多電能。
+    </p>
+
+ <!-- 第三張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/48903c5afc8337569ff1a94be625ee42.png" alt="結構圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    發電機內部不僅裝設鎂—空氣燃料電池，更使用氫燃料電池回收鎂與氧反應後的生成物進行二次發電。　圖／賴廷愷提供
+  </figcaption>
+</figure>
+
+<p class="mb-4 leading-7">
+      談及未來發展，蕭采宣表示可以嘗試透過改變電池排列等方式，擴大發電機規模及實用性，將個人使用延伸至社區家用。對此，國立清華大學工程與系統科學系暨研究所教授陳燦耀則說：「鎂金屬作為儲能與發電互補的供電系統，確實有其亮點，若可進一步提高容量與能量密度，前景可期。」但他也提到，日前的技術尚未成熟。相較於現階段常見的鋰電池或正在積極研發的鈉電池，鎂電池容量與功率較小，及原料地球存量較低，後續發展與技術突破仍待努力。
+    </p>
+  </main>
+<div class="floating-menu">
+  <a href="new.html" class="float-btn btn-art">💡</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button>
+</div>
+</body>
+</html>
