@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手機簡易測量最適鞋高</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+  .floating-menu {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    width: 60px;
+  height: 180px;
+  }
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+<a href="index.html" class="fixed top-4 left-4 z-50 text-3xl font-bold text-blue-600 hover:underline transition">
+  🌠
+</a>
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">手機簡易測量最適鞋高　助高跟鞋族擺脫傷害</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <a href="index.html" class="text-black-600 hover:underline">李雨羲</a>
+      <span>•</span>
+      <span>2023-11-30</span>
+    </div>
+    
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      迄今，尚未有快速協助民眾選擇適當鞋跟高度的方式。因此，來自國立臺北大學資訊工程學系特聘教授林伯星團隊，與臺北榮民總醫院復健醫學部醫師李思慧合作，研發出一款能倚靠AI，判斷使用者最合適高跟鞋高度的應用程式。此研發不僅在第75屆德國紐倫堡發明展（iENA）中獲得銀牌，也改變過往需要經由復健科醫師耗時費力的診斷流程。
+    </p>
+
+    <!-- 內文圖片 -->
+     <figure class="mb-6">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/ce94d33f232940b2543fbca083aecb3c.png" 
+       alt="頁面" 
+       class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    AI將測量結果的最高高度顯示於視窗下方，並且將不適用的標記「NO」以提醒使用者。　 圖／李旻軒提供
+  </figcaption>
+</figure>
+    
+<!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      「現今研究大多在探討穿高跟鞋會對人體造成的傷害，卻鮮少討論鞋跟高度應該如何調整。」團隊成員、北大資工系碩士班學生李旻軒在採訪中提到，設計此系統是為了讓必須長期穿高跟鞋的人，能夠藉此減少不必要的負擔。擔任銘傳大學禮賓人員的林同學（化名）也表示，因應工作需求而長時間穿著細跟高跟鞋，不僅造成他腳部變形，甚至有足底筋膜炎的現象，對此感到相當困擾。
+    </p>
+<p class="mb-4 leading-7">
+      為此，團隊研發的App只需使用者在一旁擺放讓程式判讀的簡易比例尺，並從腳跟正後方完整錄製踮起腳尖的過程，AI便能判斷出該使用者適合的最高鞋跟高度。「人在踮腳時，腳踝跟骨會漸漸向內縮，如果歪曲太多會造成下肢肌肉的負擔，最後導致發炎、受傷。」李旻軒解釋道，系統將影片切割成無數定格畫面，並找出使用者腳踝歪曲的瞬間，即是其所適合的最高鞋跟高度。
+    </p>
+
+      <!-- 第二張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/a95dd9a8a4fd0a3c3a5eba73e7a00f45.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    「腳踝跟骨」內翻到一定程度時，虛線標記處會隨之歪曲，長期下來會對人體的下肢肌肉造成累積傷害。 　圖／李旻軒提供
+  </figcaption>
+</figure>
+
+    
+
+     <p class="mb-4 leading-7">
+      「從第一代系統改良至今，團隊陸續修正了很多項目才有今日的成果。」李旻軒向我們介紹，如今的第三代，團隊降低使用門檻，減少依靠專業儀器的繁複程序。更使用最新的AI模板，讓使用者可以單憑一隻手機就能完整操作。同時，也取消以往必須使用全白的背景限制，除需避免過於接近膚色，AI都能大致精準的判斷腳跟位置與高度。
+    </p>
+
+  <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/da2d67ec33bc82deb0b29a368473ee0d.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    第三代系統去除初代需要專業器具和多角度鏡頭的條件，使用者的腳掌大小也不必再因儀器設計而有所限制。　</br> 圖／李旻軒提供
+  </figcaption>
+</figure>
+
+    <p class="mb-4 leading-7">
+      「我因為腳的前半部較寬，經常難以找到適合的高跟鞋。」需要長期穿著高跟鞋的金融業工作者郭小姐（化名）認為，現在只參考高度會太過單一，建議可以納入更多資訊供使用者作參考。對此，李旻軒談及未來可能的研發方向，他認為除了減少如比例尺及拍攝距離等使用限制，亦希望系統能夠添加更多人性化的功能，例如結合擴增實境及購物推薦，讓使用者在測量鞋跟高度的同時，也能夠在App上挑選、模擬試穿適合自己的高跟鞋款式。
+    </p>
+  </main>
+ <div class="floating-menu">
+  <a href="new.html" class="float-btn btn-art">💡</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button>
+</div>
+</body>
+</html>
