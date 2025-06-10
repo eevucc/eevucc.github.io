@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陽明交大成功加速RGC分化</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+  .floating-menu {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    width: 60px;
+  height: 180px;
+  }
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+<a href="index.html" class="fixed top-4 left-4 z-50 text-3xl font-bold text-blue-600 hover:underline transition">
+  🌠
+</a>
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">眼科研究迎轉機　陽明交大成功加速RGC分化</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <a href="index.html" class="text-black-600 hover:underline">李雨羲</a>
+      <span>•</span>
+      <span>2023-11-30</span>
+    </div>
+    
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      視網膜神經節細胞（Retinal Ganglion Cells, RGC）為眼睛能看見物體的關鍵細胞之一，而過去並沒有合適的模型用於研究相關疾病。國立陽明交通大學助理教授翁雨蕙團隊與臺北榮民總醫院，合作分化出「類」視網膜神經節細胞，不僅提供視神經節病變問題的治療模型，也為藥物副作用實驗開拓更簡便的方法。
+    </p>
+
+    <!-- 內文圖片 -->
+     <figure class="mb-6">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/c3151efd45da50a3d5bb73c4014c8d39.png" 
+       alt="團隊合照" 
+       class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    此研究結果發表於國際期刊《細胞和分子生命科學》（Cellular And Molecular Life Sciences）。 圖／陽明交大提供
+  </figcaption>
+</figure>
+    
+<!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      在病患長期服用治療肺結核的藥物後，大約會有1%的機率，出現包括視神經細胞病變等不良反應，最終導致失明。因此，研究團隊以幹細胞生成類細胞，找出藥物副作用的原因。團隊學生、陽明交大生命科學系暨基因體科學研究所柳湘琪表示，過去被應用在實驗中的細胞模型，並非視神經節細胞，因此不適用於這類型的實驗，「曾經有類似的RGC模型被廣泛拿來做研究，但最後卻被證實為感光細胞。」
+    </p>
+
+    <p class="mb-4 leading-7">
+      柳湘琪說明，過去研究相關病變時，會利用人類誘導性多能幹細胞（Human induced pluripotent stem cell, hiPSC），並讓其生長成可以表現眼睛所具有特徵的細胞，而過程需要耗費長達90到100天。同時，他們所需要的RGC，只在其中占1%左右的比例，因此還需要額外的純化程序去處理，過程耗時又費力。
+    </p>
+
+     <p class="mb-4 leading-7">
+      因此，團隊希望能夠找出可以控制基因表現的轉錄因子，透過指定幹細胞的分化，提高RGC的生成效率。「一開始的分化過程一直不太穩定，因為需要找出其中的關鍵轉錄因子，所以只能一直不斷重試。」團隊學生、陽明交大生命科學系暨基因體科學研究所陳是瑋說明，團隊透過將基因片段放入細胞核，觀察其形態變化的方式，最終找出了三種，可以將hiPSC在14天內，直接分化為RGC的關鍵轉錄因子。
+    </p>
+
+    <!-- 第二張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/ebfda120a2f706b8b8d050f7d56c4a48.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    hiPSC透過嵌入三種關鍵轉錄因子：ATOH7+、BRN3A/B、SOX4，得以直接分化為RGC模型。 圖／柳湘琪提供
+  </figcaption>
+</figure>
+    <p class="mb-4 leading-7">
+      基隆長庚紀念醫院長、眼科部醫師賴旗俊說：「若未來此研究越趨成熟，無論是基轉研究或是藥物治療等個人化醫療，都能提供相當的協助。」柳湘琪對此也提到，由於目前RGC尚在發表階段，因此未來會先以動物實驗作為下個階段的目標，確認是否可以作為測試藥物作用的模型。「最終結果是希望RGC可以成為視神經節的替代細胞，恢復病患因為相關病變而失明的症狀。」倘若後續有機會更進一步進行臨床實驗，也希望此研究能夠協助改善青光眼等因為視神經節細胞引發的疾病。
+    </p>
+
+ <!-- 第三張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/edb9e322591a2f3e69e4c2fef9147934.png" alt="顯微鏡" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    在確認hiPSC是否轉變形態、成功分化為RGC時，團隊會將各基因與部位染上不同顏色，便於觀察細胞核、神經軸等特徵上的變化。 圖／柳湘琪提供
+  </figcaption>
+</figure>
+  </main>
+<div class="floating-menu">
+  <a href="new.html" class="float-btn btn-art">💡</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button>
+</div>
+</body>
+</html>
