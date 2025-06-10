@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《戲獅甲》舞進巨蛋　結合藝陣演繹台灣歷史</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+ .floating-menu {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 9999; /* 提高優先順序 */
+}
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+<a href="index.html" class="fixed top-4 left-4 z-50 text-3xl font-bold text-blue-600 hover:underline transition">
+  🌠
+</a>
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">《戲獅甲》舞進巨蛋　結合藝陣演繹台灣歷史</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <a href="index.html" class="text-black-600 hover:underline">李雨羲</a>
+      <span>•</span>
+      <span>2023-11-23</span>
+    </div>
+     <figure class="mb-6">
+  <a href="https://youtu.be/eosjSnrXj-U?si=pTQHpJwNDCl3HRT2" target="_blank">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/b4c0dde05514f0d539dc07e1c13badf6.png" 
+         alt="頁面" 
+         class="w-full rounded-md" /></a>
+         <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    請點擊圖片觀看完整報導。
+  </figcaption></figure>
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      【記者黎昕俞、李雨羲、王華琳高雄採訪報導】鑼鼓喧天，響徹場館，舞獅靈活地跳躍在高樁上，以採花、翻滾等動作生動展現。
+    </p>
+
+    <p class="mb-4 leading-7">
+      2023高雄戲獅甲睽違四年再度回歸，18、19日在高雄巨蛋舉行。開幕當天，首度結合「劇本」 形式，集結超過30組技藝團隊，將台灣歷史融入民俗藝陣演出，民眾驚嘆聲接連不斷。來台交換的觀眾Amol Bhingarde欣喜地說道：「我還是不太懂中文，所以有些地方有點難跟上。但透過演出了解台灣的歷史真的很棒，我喜歡他們利用台灣歷史上不同時期的方式，以及他們如何透過舞蹈和歌唱展示這一切。」
+    </p>
+
+    <p class="mb-4 leading-7">
+      劇本結合原住民舞蹈、客家八音等民俗技藝，跳脫以傳統節慶為主的表演形式，呈現台灣過去多元族群發展。國立臺南大學民俗隊長陳柏愷說明，「這次表演為了想要倭寇侵擾的感覺，我們搭配了比較震撼的音樂去演出。」陳柏愷進一步解釋，相較於過去只使用鼓點，南大民俗隊首次嘗試結合音樂進行表演，在練習過程中，更需要不斷學習辨識節奏。
+    </p>
+    <p class="mb-4 leading-7">
+      銅鈸聲響，萬眾矚目的獅王大賽正式登場。戲獅甲作為國際三大舞獅競賽之一，今年邀請來自新加坡、馬來西亞等各國好手同台競技。來自香港的潤福堂國術龍獅總會，則以黑紅相間的獅頭作為本次亮點，獅頭手關志堅提及，「對於這次我們就選用了一隻比較特別的獅頭，那它的代表是關公的獅頭，平常我們都是用黑白色的張飛。那這次來台灣用了新的獅頭，整個就紅色配著黑色去表達。」
+    </p>
+<p class="mb-4 leading-7">
+      來自不同國家的隊伍，不僅在獅王大賽中相互切磋技藝，同時也藉此展現各地舞獅風情。新加坡藝威體育會獅尾手卓偉樂分析，台灣與新加坡獅型和動作的差異，「比如說獅型還有動作，因為我們是舞佛山獅，其他台灣隊伍都是舞鶴山獅。佛山獅是表達比較凶猛的，然後鶴山是比較溫柔一點的。」</p>
+<p class="mb-4 leading-7">
+      除了較勁舞獅功夫外，各團隊更加入釣魚、澆水等日常橋段，拉近民眾與民俗技藝的距離。國立臺北市立大學獅尾手楊鎧謙解釋，「我們比較不一樣的是啦啦隊和打棒球，比較特色的應該是我們隊員穿啦啦隊員的衣服打樂器，跟以往可能會不一樣。」
+</p>
+<p class="mb-4 leading-7">
+      兩年一次的戲獅甲系列活動，不但建立平台讓本土與國際團隊相互交流，更首度融合台灣歷史與民俗藝陣，期盼打破對傳統廟會的不良印象，讓民眾看見舞獅文化的力與美。
+</p>
+  </main>
+<div class="floating-menu">
+  <a href="video.html" class="float-btn btn-art">🎥</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button>
+</div>
+</body>
+</html>
