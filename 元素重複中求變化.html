@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>元素重複中求變化　林瑩宣「手」創印刷效果</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .floating-menu {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 100;
+    width: 60px;
+  height: 180px;
+  }
+
+  .float-btn, .main-btn {
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .main-btn {
+    background-color: #1d4ed8;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .btn-home {
+    background-color: #3b82f6;
+    bottom: 60px;
+  }
+
+  .btn-art {
+    background-color: #60a5fa;
+    bottom: 120px;
+  }
+
+  .float-btn {
+    transform: translateY(10px);
+  }
+
+  .floating-menu:hover .float-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 m-0 p-0 min-h-screen">
+ <a href="index.html" class="fixed top-4 left-4 z-50 text-3xl font-bold text-blue-600 hover:underline transition">
+  🌠
+</a>
+  <main class="max-w-3xl mx-auto bg-white p-6 shadow-sm min-h-screen">
+    <!-- 標題 -->
+    <h1 class="text-3xl font-extrabold mb-6">元素重複中求變化　林瑩宣「手」創印刷效果</h1>
+
+    <!-- 作者資訊 -->
+    <div class="flex items-center gap-2 mb-4 text-sm text-gray-600">
+      <img src="https://d24o4k0vdyt0z8.cloudfront.net/thumb/20230307/f325dec7b1b29388036f713dc2bd5616253f0641d802d056590dbaddadc6e01adf650f17a6a014c015670f4431b80a88f346f7a49e3a0b5052d02a9e178cce03.jpg" alt="作者頭像" class="w-10 h-10 object-cover rounded-full" />
+      <a href="index.html" class="text-black-600 hover:underline">李雨羲</a>
+      <span>•</span>
+      <span>2023-11-30</span>
+    </div>
+    
+    <!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      高飽和的對比色彩醞釀強烈的視覺衝擊，來自國立清華大學藝術與設計學系碩士班四年級的林瑩宣，以綠色和壓克力媒材作為創作主軸，舉辦個人創作展《重複與差異》，在看似重複的幾何元素之中，穿插細微的變化與驚喜。
+    </p>
+
+    <p class="mb-4 leading-7">
+      高中便開始踏入藝術領域的林瑩宣，在大學期間也接觸了多媒體、美術、平面設計等科系，如今轉換至藝設系，讓他意識到比起坐在電腦前操弄組件，他更享受親自體會媒材在手中變化的過程。因此，此次展覽不僅讓林瑩宣開始檢視自己的創作方向，更展現出他以手作方式傳達視覺設計的風格。
+    </p>
+
+    <!-- 內文圖片 -->
+     <figure class="mb-6">
+  <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/876abd11d23f6bacd83bb784812f3e30.png" 
+       alt="頁面" 
+       class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    數字「三」是林瑩宣特別執著的創作原則之一，無論是畫布尺寸、元素數量或是展品件數，他都以三的倍數作為基準。　圖／嘟嚕影像工作室提供
+  </figcaption>
+</figure>
+    
+<!-- 內文段落 -->
+    <p class="mb-4 leading-7">
+      擁有強迫症的林瑩宣對於「規律」的事物有著癡迷的追求，在展覽中也透過「重複」元素的方式，一反大家對於他陽光外表的既定印象，展現內心較為偏執的一面。而為了以手工方式讓作品有類似印刷的效果，他捨棄油彩這類筆觸明顯的媒材，改以刮刀塗抹壓克力顏料在畫布上，減少人為痕跡，「我沒辦法接受有任何『失控』的要素出現在我的作品之中，所以我的作品只能被『理性』的創作出來。」
+    </p>
+
+      <!-- 第二張圖片（儀表板 UI）-->
+      <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/79bcbf09c9027cc49d6a67da76a729d2.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    〈重複執行8次〉為林瑩宣專為該轉角處設計的作品，相較於過去多以具體物件延伸創作，他這次更注重在色彩的抽象結構上。　 圖／嘟嚕影像工作室提供
+  </figcaption>
+</figure>
+
+     <p class="mb-4 leading-7">
+      「以前在藝術駐留時，小朋友在色彩上的運用總能讓我看見制式框架以外的驚喜。」林瑩宣解釋，小朋友在上色過程中，不會對物體本身帶有刻板印象，使他從中看見色彩搭配的其他可能性。因此在本次展覽中，林瑩宣選擇以大量「綠色」元素貫穿所有展件，並利用顏色的明度、深淺等要素，引導觀眾的視線動線及觀賞順序。像是佇立於入口處旁的作品〈叢〉，他便利用由上而下切光的方式，讓作品在昏暗的角落中，營造出如同「燈箱」的數位效果，以吸引觀眾目光。
+    </p>
+
+  <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/98f24a2d1055094b097fbea3608eb71c.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    林瑩宣表示瑩光橘為他最愛的顏色，因此他也將其穿插在展場中，並利用線條的方式貼在地面上，作為警示線將展場空間框住。 　圖／嘟嚕影像工作室提供
+  </figcaption>
+</figure>
+
+    <p class="mb-4 leading-7">
+      「瑩宣每一次辦展都會反覆場勘，讓整個展場空間都能融合成為作品的一部分。」在清大藝設系的負責指導林瑩宣的教授謝鴻均表示，林瑩宣在籌備期間，會不斷確認展場在每一個瞬間的狀態，並利用環境增加作品本身的視覺效果。此次展覽的主要作品〈反覆的反覆〉便是利用展場的落地窗，讓窗外植物與不同時間的太陽光，和作品產生視覺上的變化。同時，林瑩宣也利用變換材質、扭曲線條的方式，去破壞作品原先因重複而產生的一致性。
+    </p>
+
+    <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/5857dd98a6deb5c0b9869c22161861d9.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    林瑩宣以黃色玻璃紙覆蓋玻璃窗，以呼應展場黃色漆牆，同時也利用跳格覆蓋的方式，讓觀眾在視覺上得以有喘息的空間。　 圖／嘟嚕影像工作室提供
+</figure>
+
+<p class="mb-4 leading-7">
+      本次的展覽對於林瑩宣來說，不僅僅是證明自己的管道，也讓他逐漸梳理出自己未來的方向，成功在研究所求學階段立下小小里程碑。同讀清大藝設系碩士班二年級的葛亭妤說：「像我學一般美術繪畫的人，就鮮少有機會接觸到這樣強烈的色彩衝擊。」他認為，林瑩宣的用色手法對他來說是一個新穎的體驗，未來在創作上也會想嘗試這類大膽的表現方式。
+    </p>
+
+    <figure class="mb-6">
+    <img src="https://unews.nccu.edu.tw/wp-content/uploads/2023/11/e1a123c175e8d8329ea476ab9f2cbd8a.png" alt="流程圖" class="w-full rounded-md" />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    〈反覆的反覆〉中，林瑩宣在無數筆直的線條之中，穿插了三條跳動的曲線，讓線條回復原先的動態感。</br>圖／李雨羲攝
+  </figcaption></figure>
+  </main>
+  <div class="floating-menu">
+  <a href="art.html" class="float-btn btn-art">🎨</a>
+  <a href="index.html" class="float-btn btn-home">🏠</a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="main-btn">⭐</button>
+</div>
+</body>
+</html>
