@@ -85,6 +85,12 @@
   z-index: -100;
   pointer-events: none;
 }
+  #bg-video::-webkit-media-controls {
+  display: none !important;
+}
+#bg-video {
+  pointer-events: none; /* 確保不能點到影片 */
+}
 </style>
 </head>
 <body class="p-8 text-white relative">
