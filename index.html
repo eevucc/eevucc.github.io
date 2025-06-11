@@ -148,7 +148,7 @@ body {
     </div>
   </div>
 
- <script>
+<script>
   for (let i = 0; i < 10; i++) {
     const star = document.createElement("div");
     star.classList.add("shooting-star");
@@ -156,11 +156,9 @@ body {
     const fromTop = Math.random() < 0.5;
 
     if (fromTop) {
-      // 從上方隨機位置出發
       star.style.top = "0px";
       star.style.left = Math.random() * window.innerWidth + "px";
     } else {
-      // 從左邊隨機位置出發
       star.style.left = "0px";
       star.style.top = Math.random() * window.innerHeight + "px";
     }
@@ -168,6 +166,18 @@ body {
     star.style.animationDelay = Math.random() * 5 + "s";
     document.body.appendChild(star);
   }
+
+  // ✅ 改成這段強制播放背景影片（手機修正用）
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      const bgVideo = document.getElementById("bg-video");
+      if (bgVideo) {
+        bgVideo.play().catch(err => {
+          console.log("背景影片播放失敗", err);
+        });
+      }
+    }, 200);
+  });
 </script>
 
 </body>
